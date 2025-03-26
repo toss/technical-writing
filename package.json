@@ -1,0 +1,37 @@
+{
+  "name": "technical-writing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@radix-ui/react-scroll-area": "^1.2.2",
+    "@radix-ui/react-tabs": "^1.1.2",
+    "@rspress/core": "^1.40.0",
+    "comment-parser": "^1.4.1",
+    "js-beautify": "^1.15.1",
+    "lucide-react": "^0.473.0",
+    "monaco-editor": "^0.52.2",
+    "prettier": "^3.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.3",
+    "react-resizable-panels": "^2.1.7",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "rspress": "^1.40.0",
+    "shiki": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/js-beautify": "^1",
+    "@types/node": "^22",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "typescript": "5.0.4"
+  },
+  "packageManager": "yarn@4.5.3+sha512.3003a14012e2987072d244c720506549c1aab73ee728208f1b2580a9fd67b92d61ba6b08fe93f6dce68fd771e3af1e59a0afa28dd242dd0940d73b95fedd4e90"
+}

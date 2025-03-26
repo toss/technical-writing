@@ -1,0 +1,295 @@
+  .container {
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  
+  .description {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    min-height: 400px;
+  }
+  
+  /* 왼쪽 패널: 코드 에디터 */
+  .codePanel {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    overflow: auto;
+    min-width: 600px;
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .tab {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .tab:hover {
+    color: #111827;
+    background-color: #f3f4f6;
+  }
+  
+  .activeTab {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    background-color: #eff6ff;
+  }
+  
+  .editor {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .editorHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .editorControls {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .controlRed,
+  .controlYellow,
+  .controlGreen {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .controlRed { background-color: #ff5f56; }
+  .controlYellow { background-color: #ffbd2e; }
+  .controlGreen { background-color: #27c93f; }
+  
+  .copyButton {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .copyButton:hover {
+    color: #374151;
+    background-color: #f3f4f6;
+  }
+  
+  .buttonContent {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .codeContent {
+    padding: 1.5rem;
+    background-color: white;
+    overflow: auto; /* 스크롤 가능하도록 설정 */
+    border-radius: 4px;
+  }
+  
+  .codeContent pre {
+    margin: 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #1f2937;
+    white-space: pre-wrap; /* 줄바꿈과 공백 유지 */
+    tab-size: 2;
+  }
+
+  .codeBlock {
+    display: block;
+    white-space: pre-wrap; /* 줄바꿈 유지 */
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    padding: 10px;
+  }
+  /* 오른쪽 패널: 설명 섹션 */
+  .explanationPanel {
+    width: 300px;
+    background-color: var(--explanation-bg);
+    border-left: 1px solid var(--doc-border);
+    flex-shrink: 0;
+    position: relative;
+    padding-top: 85px; /* tabs + header 높이 */
+    height: 100%;
+  }
+  
+  .explanationSection {
+    padding: 12px;
+    border-left: 3px solid var(--doc-border);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .explanationSection.hovered {
+    background-color: var(--hover-bg);
+    border-left-color: var(--section-number-border);
+  }
+  
+  .explanationCode {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-radius: 6px;
+  }
+  
+  .explanationCode pre {
+    margin: 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #334155;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  .explanationText {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  /* 반응형 */
+  @media (max-width: 768px) {
+    .mainContent {
+      grid-template-columns: 1fr;
+    }
+    
+    .codePanel {
+      position: static;
+    }
+  }
+  
+  .codeLine {
+    display: block; /* 각 줄이 독립적으로 렌더링 */
+    padding: 0 0.5rem;
+    margin: 0 -0.5rem;
+    white-space: pre; /* 공백과 줄바꿈 유지 */
+    line-height: 1.6;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.2s;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  .codeLine:hover {
+    background-color: rgba(229, 231, 235, 0.5); /* 줄 호버 효과 */
+  }
+  
+  .highlightYellow {
+    background-color: rgba(255, 229, 100, 0.2);
+    margin-left: -8px;
+    padding-left: 16px;
+  }
+  
+  .highlightGreen {
+    background-color: rgba(0, 255, 0, 0.1);
+    margin-left: -8px;
+    padding-left: 16px;
+  }
+  
+  /* 설명 섹션의 코드 블록 스타일 */
+  .explanationCode {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .explanationCode:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .explanationText {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .mainContent {
+      grid-template-columns: 1fr;
+    }
+  
+    .codePanel {
+      position: static;
+    }
+  }
+
+.sectionNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: #666;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid var(--highlight-color);
+}
+
+.codeBlockNumber {
+  position: absolute;
+  left: -22px;
+  width: 18px;
+  height: 18px;
+}
+
+.codeLine {
+  position: relative;
+  display: block;
+  padding-left: 8px;
+}
+
+.codeLine.hovered {
+  background-color: rgba(144, 202, 249, 0.2) !important;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.explanationSection {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.explanationSection.hovered {
+  background-color: rgba(144, 202, 249, 0.2);
+  border-left-color: transparent;
+}

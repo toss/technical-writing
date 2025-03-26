@@ -1,0 +1,16 @@
+@import './rspress.css';
+@import './normalize.css';
+
+:root{
+  --rp-home-hero-name-color: #222;
+  --rp-c-text-2: #333;
+}
+
+.dark {
+  --rp-home-hero-name-color: #eee;
+  --rp-c-text-2: #aaa;
+}
+
+.button_72e53.brand_72e53 {
+  background: #2272eb;
+}

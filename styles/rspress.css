@@ -1,0 +1,18 @@
+:root {
+  --rp-home-hero-name-color: #222;
+  --rp-c-text-2: #333;
+}
+
+.dark {
+  --rp-home-hero-name-color: #eee;
+  --rp-c-text-2: #aaa;
+}
+
+.button_72e53.brand_72e53 {
+  background: #2272eb;
+}
+
+.m-auto .flex .flex-col .md:flex-row .max-w-6xl .min-h-[50vh] .mt-12 .sm:mt-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}

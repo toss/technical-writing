@@ -1,0 +1,19 @@
+{
+  "overrides": [
+    {
+      "files": "*.mdx",
+      "options": {
+        "parser": "mdx",
+        "printWidth": 100,
+        "proseWrap": "preserve",
+        "singleQuote": true,
+        "bracketSpacing": true
+      }
+    }
+  ],
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "bracketSpacing": true
+}

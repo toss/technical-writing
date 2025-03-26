@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.directive {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.directiveTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.doContainer {
+  border-color: var(--rp-container-tip-border);
+  background-color: var(--rp-container-tip-bg);
+}
+
+.doTitle {
+  color: var(--rp-container-tip-text);
+}
+
+.dontContainer {
+  border-color: var(--rp-container-danger-border);
+  background-color: var(--rp-container-danger-bg);
+}
+
+.dontTitle {
+  color: var(--rp-container-danger-text);
+}

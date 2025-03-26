@@ -1,0 +1,50 @@
+---
+head:
+  - - meta
+    - property: og:title
+      content: 기본 문서 작성하기
+---
+import { DocExample } from '../shared/components'
+import learningDocExample from './content/learningDocExample'
+import troubleShootingDocExample from './content/troubleShootingDocExample'
+
+# 기본 문서 작성하기
+
+이 문서에서는 가장 기본적인 문서인 튜토리얼과 트러블슈팅 문서를 작성하는 방법을 알려드려요. 문서를 작성할 때 주의해야 할 점과 개선할 수 있는 부분을 함께 살펴봐요.
+
+## 학습을 위한 문서
+
+이 문서에서는 React를 처음 접하는 초보 개발자를 대상으로 'React 컴포넌트 만들기'라는 튜토리얼을 개선해 볼 거예요. 개선 전과 개선 후를 비교하면서 어떤 부분이 개선됐는지 살펴보세요.
+
+::: tip 참고하세요
+
+[학습을 위한 문서](../type/learning.md)는 독자가 새로운 기술이나 도구를 배울 수 있도록 돕는 문서예요. 이 문서에서는 구체적인 예시, 실행 가능한 코드, 성공적인 경험을 제공해야 해요.
+
+:::
+
+<DocExample
+  before={learningDocExample.before}
+  after={learningDocExample.after}
+/>
+
+### 정리
+
+- 학습 목표를 명확하게 제시하고, 목표 → 준비 → 실습 → 적용 → 확장이라는 단계별 흐름을 통해 학습자가 쉽게 따라갈 수 있도록 개선했어요.  
+- 핵심 흐름에 집중해 예상 가능한 성공 경로를 중심으로 설명했고, 복잡하거나 부가적인 내용은 최소화하거나 별도로 안내했어요.
+- 모든 코드 예제가 실제로 실행 가능하도록 설계되었고, 바로 복사해서 사용할 수 있어 실습 효율을 높였어요.
+
+## 문제 해결을 위한 문서
+
+이 문서에서는 특정한 질문이나 이슈를 해결하기 위한 문서를 개선해 볼 거예요. 개선 전과 개선 후를 비교하면서 어떤 부분이 개선됐는지 살펴보세요.
+
+::: tip 참고하세요
+
+[문제 해결을 위한 문서](../type/problem-solving.md)는 독자가 특정한 문제를 해결하기 위한 문서예요. 이 문서에서는 문서가 해결하려는 문제, 질문을 명확히 하고 해결 방법을 구체적으로 제시해줘야 해요.
+
+:::
+
+<DocExample
+  before={troubleShootingDocExample.before}
+  after={troubleShootingDocExample.after}
+/>
+
