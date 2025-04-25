@@ -7,7 +7,7 @@ Next.js에서 클라이언트와 서버의 렌더링 결과가 불일치하면 H
 ## 해결 방법
 
 function TimeComponent() {
-  const [time, setTime] = useState(Date.now());
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
     setTime(Date.now());
