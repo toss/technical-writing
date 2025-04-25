@@ -12,9 +12,18 @@ export default defineConfig({
   },
   head: [
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:description', content: '개발자를 위한 글쓰기 기본기' }],
+    [
+      'meta',
+      { property: 'og:description', content: '개발자를 위한 글쓰기 기본기' },
+    ],
     ['meta', { property: 'og:url', content: 'https://technical-writing.dev/' }],
-    ['meta', { property: 'og:image', content: 'https://static.toss.im/illusts/tech_writing_guide.png' }],
+    [
+      'meta',
+      {
+        property: 'og:image',
+        content: 'https://static.toss.im/illusts/tech_writing_guide.png',
+      },
+    ],
   ],
   globalStyles: path.join(__dirname, './styles/index.css'),
   themeConfig: {
@@ -41,7 +50,7 @@ export default defineConfig({
         text: 'AI와 함께 쓰기',
         link: '/tutorial/review-prompt',
         position: 'left',
-      }
+      },
     ],
     sidebar: {
       '/': [
@@ -156,5 +165,6 @@ export default defineConfig({
   },
   markdown: {
     mdxRs: false,
+    checkDeadLinks: true,
   },
 });
