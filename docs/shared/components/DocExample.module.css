@@ -237,7 +237,7 @@
     line-height: 1.6;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 1280px) {
     .mainContent {
       grid-template-columns: 1fr;
     }
