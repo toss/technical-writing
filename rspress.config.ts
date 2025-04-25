@@ -29,6 +29,7 @@ export default defineConfig({
   globalStyles: path.join(__dirname, './styles/index.css'),
   themeConfig: {
     darkMode: false,
+    searchPlaceholderText: '검색',
     socialLinks: [
       {
         icon: 'github',
