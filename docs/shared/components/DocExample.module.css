@@ -133,14 +133,16 @@
     font-size: 14px;
     padding: 10px;
   }
-  /* 오른쪽 패널: 설명 섹션 */
+
   .explanationPanel {
-    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     background-color: var(--explanation-bg);
     border-left: 1px solid var(--doc-border);
     flex-shrink: 0;
     position: relative;
-    padding-top: 85px; /* tabs + header 높이 */
+    padding: 20px 0;
     height: 100%;
   }
   
@@ -177,17 +179,15 @@
     font-size: 0.875rem;
     color: #4b5563;
     line-height: 1.6;
+    width: 300px;
   }
   
-  /* 반응형 */
-  @media (max-width: 768px) {
-    .mainContent {
-      grid-template-columns: 1fr;
-    }
-    
-    .codePanel {
-      position: static;
-    }
+  .mainContent {
+    grid-template-columns: 1fr;
+  }
+  
+  .codePanel {
+    position: static;
   }
   
   .codeLine {
