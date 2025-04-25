@@ -6,6 +6,7 @@ export default defineConfig({
   root: path.join(__dirname, 'docs'),
   title: '테크니컬 라이팅 가이드',
   icon: '/toss-logo.png',
+  lang: 'ko',
   logo: {
     light: '/toss-logo.png',
     dark: '/toss-logo.png',
