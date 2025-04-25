@@ -4,11 +4,12 @@ head:
     - property: og:title
       content: 문서 구조 만들기
 ---
+
 # 문서 구조 만들기
 
 여러 페이지로 구성된 문서를 작성할 때는 체계적인 문서 구조가 필요해요. 문서를 잘 설계하면 독자가 원하는 정보를 빠르게 찾고, 관련 내용을 자연스럽게 탐색할 수 있어요. 다음 세 가지 핵심 요소를 고려해야 해요.
 
-::: tip 
+::: tip
 
 1. [문서 유형을 파악하고](../type/index.md) 독자의 목표에 맞는 문서를 작성해요.
 2. **문서 구조를 논리적으로 배치해서** 흐름을 자연스럽게 만들어요.
@@ -58,12 +59,12 @@ docs/
 다음 구조를 보면 학습 중심 문서, 문제 해결 중심 문서, 설명 문서가 있어요. 기본적인 개념을 설명하고 튜토리얼로 일반적인 사용 방법을 설명한 뒤, 특정 목표를 달성하기 위한 가이드를 제공하죠.
 
 ```
-nextjs-performance-optimization/ 
-├── index.md                  # 개요 (Overview) 
+nextjs-performance-optimization/
+├── index.md                  # 개요 (Overview)
 ├── fundamentals.md           # 성능 최적화의 기본 개념
 ├── tutorial.md               # 성능 최적화를 적용하는 간단한 튜토리얼
 ├── guides/                   # 특정 목표를 달성하기 위한 가이드
-│   ├── code-splitting.md       # e.g. 코드 분할 (Code Splitting) 
+│   ├── code-splitting.md       # e.g. 코드 분할 (Code Splitting)
 │   └── image-optimization.md   # e.g. 이미지 최적화
 │   └── caching-strategies.md   # e.g. 캐싱 전략
 └── troubleshooting.md        # 문제 해결 (Troubleshooting)
@@ -75,7 +76,7 @@ nextjs-performance-optimization/
 
 - [학습을 위한 문서](../type/learning.md)는 전체적인 흐름과 개요를 이해하는 걸로 시작해요. 필요하다면 실습, 심화 문제 해결의 계층을 가질 수 있어요.
 
-- [문제 해결을 위한 문서](../type/problem-solving.md)나 [설명 문서](../type/explanation.md)의 구조는 단계적이지 않고 같은 레벨의 문서로 구성될 수 있어요.
+- [문제 해결을 위한 문서](../type/problem-solving.md)나 [설명 문서](../type/explaination.md)의 구조는 단계적이지 않고 같은 레벨의 문서로 구성될 수 있어요.
 
 - [참조 문서](../type/reference.md)는 새로운 페이지에서 따로 목록을 제공할 수 있어요.
 
@@ -83,16 +84,16 @@ nextjs-performance-optimization/
 
 ## 3. 연결 관계를 고려하여 크로스링크 설정하기
 
-보통 이렇게 여러 문서로 이루어진 문서는 하나의 문서 안에서 끝나지 않고, 다른 문서와 연결될 때가 많아요. 
+보통 이렇게 여러 문서로 이루어진 문서는 하나의 문서 안에서 끝나지 않고, 다른 문서와 연결될 때가 많아요.
 
 예를 들면 튜토리얼에서 간단히 설명한 내용을 자세하게 설명하고 싶다면 가이드나 참조 문서의 링크를 추가해 주면 독자가 더 깊은 정보가 필요할 때 바로 원하는 정보를 찾을 수 있어요.
 
 예를 들어, '코드 분할' 문서에서는 `lazy-loading.md` 문서를 참고 링크로 연결할 수 있겠죠.
 
 ```
-nextjs-performance-optimization/ 
-├── index.md 
-├── code-splitting.md 
+nextjs-performance-optimization/
+├── index.md
+├── code-splitting.md
 ├── ...
 └── lazy-loading.md # 코드 분할과 연계된 내용
 ```
