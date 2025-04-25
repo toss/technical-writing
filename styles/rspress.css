@@ -16,3 +16,19 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.rspress-home-hero-tagline {
+  font-size: 0.875rem !important; /* text-sm */
+}
+
+@media (min-width: 640px) {
+  .rspress-home-hero-tagline {
+    font-size: 1.25rem !important; /* text-xl */
+  }
+}
+
+@media (min-width: 768px) {
+  .rspress-home-hero-tagline {
+    font-size: 1.5rem !important;
+  }
+}
