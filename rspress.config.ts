@@ -87,7 +87,7 @@ export default defineConfig({
             },
             {
               text: '깊은 이해를 위한 문서',
-              link: '/type/explaination',
+              link: '/type/explanation',
             },
           ],
         },
