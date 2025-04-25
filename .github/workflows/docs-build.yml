@@ -1,0 +1,33 @@
+name: docs-build
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - '**'
+  push:
+    branches:
+      - master
+
+jobs:
+  docs-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Setup yarn
+        run: corepack enable
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Build Rspress
+        run: yarn build
