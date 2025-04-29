@@ -181,13 +181,15 @@
     line-height: 1.6;
     width: 300px;
   }
-  
-  .mainContent {
-    grid-template-columns: 1fr;
-  }
-  
-  .codePanel {
-    position: static;
+
+  @media (max-width: 1280px) {
+    .mainContent {
+      grid-template-columns: 1fr;
+    }
+    
+    .codePanel {
+      position: static;
+    }
   }
   
   .codeLine {
