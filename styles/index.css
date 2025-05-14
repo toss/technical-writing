@@ -15,6 +15,8 @@
   background: #2272eb;
 }
 
-div.social-links {
-  margin-top: 0.75rem;
+@media (max-width: 768px) {
+  div.social-links {
+    margin-top: 0.75rem;
+  }
 }
