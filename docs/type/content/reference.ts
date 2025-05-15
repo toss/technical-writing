@@ -107,7 +107,7 @@ fetchData();
         {
             "explanation": "fetch 함수의 매개변수와 반환값을 정리해요. Response 객체의 주요 속성을 나열하고, 반환값을 다루는 방법을 쉽게 이해할 수 있도록 했습니다.",
             "lineStart": 12,
-            "lineEnd": 30
+            "lineEnd": 33
         },
         {
             "explanation": "기본적인 사용 예제를 제공해요. fetch를 활용하여 데이터를 가져오는 방법과 오류 처리를 함께 설명했습니다.",
