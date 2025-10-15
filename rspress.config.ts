@@ -130,10 +130,14 @@ export default defineConfig({
               text: '예측 가능하게 하기',
               link: '/architecture/predictability',
             },
+            {
+              text: '보조 자료 활용하기',
+              link: '/architecture/supplementary-materials',
+            },
           ],
         },
         {
-          text: 'Step 3. 문장 다듬기',
+          text: 'Step 3. 문장 작성하기',
           collapsed: true,
           items: [
             {
