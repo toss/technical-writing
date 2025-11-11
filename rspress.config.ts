@@ -45,17 +45,17 @@ export default defineConfig({
       },
       {
         text: '튜토리얼',
-        link: '/tutorial/basic-documents',
+        link: '/tutorial',
         position: 'left',
       },
       {
         text: 'AI와 함께 쓰기',
-        link: '/tutorial/review-prompt',
+        link: '/ai-writing/index',
         position: 'left',
       },
       {
         text: '좋은 문서의 기준',
-        link: '/docs-principle/review-prompt',
+        link: '/metric/index',
         position: 'left',
       },
     ],
@@ -63,11 +63,11 @@ export default defineConfig({
       '/': [
         {
           text: '시작하기',
-          link: 'overview',
+          link: '/overview',
         },
         {
           text: '튜토리얼',
-          link: 'tutorial',
+          link: '/tutorial',
         },
         {
           text: '준비하기',
@@ -149,15 +149,19 @@ export default defineConfig({
           collapsed: true,
           items: [
             {
+              text: '소개',
+              link: '/metric/index',
+            },
+            {
               text: '가독성',
               items: [
                 {
                   text: '예시1',
-                  link: '/url'
+                  link: '/metric/1'
                 },
                 {
                   text: '예시2',
-                  link: '/url'
+                  link: '/metric/2'
                 }
               ]
             },
@@ -166,11 +170,11 @@ export default defineConfig({
               items: [
                 {
                   text: '예시3',
-                  link: '/url'
+                  link: '/metric/3'
                 },
                 {
                   text: '예시4',
-                  link: '/url'
+                  link: '/metric/4'
                 }
               ]
             },
