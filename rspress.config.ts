@@ -53,6 +53,11 @@ export default defineConfig({
         link: '/tutorial/review-prompt',
         position: 'left',
       },
+      {
+        text: '좋은 문서의 기준',
+        link: '/docs-principle/review-prompt',
+        position: 'left',
+      },
     ],
     sidebar: {
       '/': [
@@ -62,103 +67,112 @@ export default defineConfig({
         },
         {
           text: '튜토리얼',
-          items: [
-            {
-              text: '기본 문서 작성하기',
-              link: '/tutorial/basic-documents',
-            },
-            {
-              text: '문서 구조 만들기',
-              link: '/tutorial/structure',
-            },
-            {
-              text: 'AI와 함께 쓰기',
-              link: '/tutorial/review-prompt',
-            },
-          ],
+          link: 'tutorial',
         },
         {
-          text: 'Step 1. 문서 유형 정하기',
+          text: '준비하기',
           items: [
             {
               text: '소개',
-              link: 'type/index',
+              link: '/arrange/index',
             },
             {
-              text: '학습을 위한 문서',
-              link: '/type/learning',
+              text: '문서 유형 정하기',
+              link: '/arrange/type',
             },
             {
-              text: '문제 해결을 위한 문서',
-              link: '/type/problem-solving',
-            },
-            {
-              text: '참조를 위한 문서',
-              link: '/type/reference',
-            },
-            {
-              text: '깊은 이해를 위한 문서',
-              link: '/type/explanation',
+              text: '자료 모으기',
+              link: '/arrange/material',
             },
           ],
         },
         {
-          text: 'Step 2. 정보 구조 만들기',
+          text: 'AI와 함께 쓰기',
           collapsed: true,
           items: [
             {
               text: '소개',
-              link: '/architecture/index',
+              link: '/ai-writing/index',
             },
             {
-              text: '한 페이지에서 하나만 다루기',
-              link: '/architecture/one-thing-per-one-page',
+              text: '규칙 만들기',
+              link: '/ai-writing/rule',
             },
             {
-              text: '가치를 먼저 제공하기',
-              link: '/architecture/value-first-cost-later',
+              text: '페이지 목차 만들기',
+              link: '/ai-writing/table-of-content',
             },
             {
-              text: '효과적인 제목 쓰기',
-              link: '/architecture/heading',
-            },
-            {
-              text: '개요 빠트리지 않기',
-              link: '/architecture/overview',
-            },
-            {
-              text: '예측 가능하게 하기',
-              link: '/architecture/predictability',
+              text: '초안 작성하기',
+              link: '/ai-writing/draft',
             },
           ],
         },
         {
-          text: 'Step 3. 문장 다듬기',
+          text: '검토하기',
           collapsed: true,
           items: [
             {
               text: '소개',
-              link: '/sentence/index',
+              link: '/review/index',
             },
             {
-              text: '문장의 주체를 분명하게 하기',
-              link: '/sentence/subject',
+              text: '스스로 검토하기',
+              link: '/review/self',
             },
             {
-              text: '필요한 정보만 남기기',
-              link: '/sentence/compactness',
+              text: 'AI와 함께 리뷰하기',
+              link: '/review/ai',
+            },
+          ],
+        },
+        {
+          text: '더 알아보기',
+          collapsed: true,
+          items: [
+            {
+              text: '소개',
+              link: '/supplement/index',
             },
             {
-              text: '구체적으로 쓰기',
-              link: '/sentence/concreteness',
+              text: '시각자료 만들기',
+              link: '/supplement/visual-material',
             },
             {
-              text: '자연스러운 한국어 표현 쓰기',
-              link: '/sentence/natural-kor-expression',
+              text: '예제 코드 만들기',
+              link: '/supplement/example-code',
+            },
+          ],
+        },
+        {
+          text: '좋은 문서의 기준',
+          collapsed: true,
+          items: [
+            {
+              text: '가독성',
+              items: [
+                {
+                  text: '예시1',
+                  link: '/url'
+                },
+                {
+                  text: '예시2',
+                  link: '/url'
+                }
+              ]
             },
             {
-              text: '일관되게 쓰기',
-              link: '/sentence/consistency',
+              text: '명확성',
+              items: [
+                {
+                  text: '예시3',
+                  link: '/url'
+                },
+                {
+                  text: '예시4',
+                  link: '/url'
+                }
+              ]
             },
           ],
         },
