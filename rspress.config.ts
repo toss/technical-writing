@@ -66,27 +66,18 @@ export default defineConfig({
           link: '/overview',
         },
         {
-          text: '이해하기',
-          items: [
-            {
-              text: '문서 유형 알아보기',
-              link: '/comprehension/doc-type'
-            }
-          ]
-        },
-        {
           text: '튜토리얼',
           link: '/tutorial',
         },
         {
-          text: '문서 작성 준비하기',
+          text: '준비하기',
           items: [
             {
               text: '소개',
               link: '/arrange/index',
             },
             {
-              text: '문서 구조 만들기',
+              text: '문서 유형 정하기',
               link: '/arrange/type',
             },
             {
