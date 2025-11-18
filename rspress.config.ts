@@ -87,7 +87,7 @@ export default defineConfig({
             },
             {
               text: '문서 구조 만들기',
-              link: '/arrange/type',
+              link: '/arrange/architecture',
             },
             {
               text: '자료 모으기',
