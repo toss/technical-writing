@@ -130,6 +130,10 @@ export default defineConfig({
               text: '예측 가능하게 하기',
               link: '/architecture/predictability',
             },
+            {
+              text: '필요한 정보 포함하기',
+              link: '/architecture/background',
+            },
           ],
         },
         {
