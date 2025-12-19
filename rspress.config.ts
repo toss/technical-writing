@@ -175,7 +175,7 @@ export default defineConfig({
               link: '/visualization/index',
             },
             {
-              text: '콜아웃',
+              text: '콜아웃으로 강조하기',
               link: '/visualization/callout',
             },
           ],
