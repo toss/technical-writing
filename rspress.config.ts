@@ -166,6 +166,20 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: 'Step 4. 시각적으로 구분하기',
+          collapsed: true,
+          items: [
+            {
+              text: '소개',
+              link: '/visualization/index',
+            },
+            {
+              text: '콜아웃',
+              link: '/visualization/callout',
+            },
+          ],
+        },
       ],
     },
   },
