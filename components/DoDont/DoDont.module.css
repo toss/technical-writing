@@ -1,7 +1,13 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .directive {
@@ -10,6 +16,12 @@
   border-radius: 0.375rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.directive pre {
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .directiveTitle {
