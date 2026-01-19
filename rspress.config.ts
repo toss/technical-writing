@@ -178,6 +178,10 @@ export default defineConfig({
               text: '콜아웃으로 강조하기',
               link: '/visualization/callout',
             },
+            {
+              text: '목록으로 정보 전달하기',
+              link: '/visualization/list',
+            },
           ],
         },
       ],
