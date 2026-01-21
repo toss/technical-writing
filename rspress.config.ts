@@ -179,7 +179,7 @@ export default defineConfig({
               link: '/visualization/callout',
             },
             {
-              text: '목록으로 정보 전달하기',
+              text: '목록으로 정리하기',
               link: '/visualization/list',
             },
           ],
