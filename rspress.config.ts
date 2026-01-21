@@ -1,6 +1,5 @@
 import * as path from 'node:path';
 import { defineConfig } from 'rspress/config';
-import { pluginOpenGraph } from 'rsbuild-plugin-open-graph';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
