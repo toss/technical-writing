@@ -55,6 +55,10 @@ head:
 
 - 이 문서는 우리가 일상에서 말할 때처럼 해요체와 합쇼체를 섞어 사용합니다. 어미 선택은 각 문서가 전달하고자 하는 분위기에 맞춰 자유롭게 결정하세요.
 
-## 저작자
+## License
 
-- [jennybehan](https://github.com/jennybehan)
+Copyright (c) 2024 Viva Republica, Inc.
+
+The contents of this repository are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0):
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
