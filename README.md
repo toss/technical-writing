@@ -20,6 +20,10 @@
 
 여러 페이지로 만들어진 문서를 만들어야 한다면 [문서 구조 만들기](https://technical-writing.dev/tutorial/structure.html)를 보고 전체적인 문서 구조를 먼저 짜보세요.
 
-## 저작자
+## License
 
-- [jennybehan](https://github.com/jennybehan)
+Copyright (c) 2024 Viva Republica, Inc.
+
+The contents of this repository are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0):
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
