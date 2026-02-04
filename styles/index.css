@@ -15,6 +15,18 @@
   background: #2272eb;
 }
 
+@media (max-width: 640px) {
+  .modal_6e282 {
+    width: 84vw;
+  }
+}
+
+@media (max-width: 960px) {
+  .modal_6e282 {
+    margin-top: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   div.social-links {
     margin-top: 0.75rem;
